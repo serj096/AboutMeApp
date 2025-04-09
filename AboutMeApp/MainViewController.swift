@@ -8,11 +8,9 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
     @IBOutlet weak var loginTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var logInButton: UIButton!
     
     private let correctUsername = "user"
@@ -32,16 +30,15 @@ class MainViewController: UIViewController {
         passwordTextField.smartInsertDeleteType = .no
         passwordTextField.autocapitalizationType = .none
         passwordTextField.isSecureTextEntry = true
-        
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-            if loginTextField.text != correctUsername || passwordTextField.text != correctPassword {
-                showAlert(withTitle: "Ошибка", andMessage: "Неверные имя пользователя или пароль")
-                return false
-            }
-            return true
+        if loginTextField.text != correctUsername || passwordTextField.text != correctPassword {
+            showAlert(withTitle: "Ошибка", andMessage: "Неверные имя пользователя или пароль")
+            return false
         }
+        return true
+    }
     
     @IBAction func tintLoginButtonPressed() {
         showAlert(withTitle: "Login", andMessage: "Login: user")
@@ -56,14 +53,12 @@ class MainViewController: UIViewController {
         view.endEditing(true)
     }
     
-
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let helloVC = segue.destination as? HelloViewController
         helloVC?.username = loginTextField.text ?? ""
         
     }
-
+    
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         loginTextField.text = ""
         passwordTextField.text = ""
@@ -76,6 +71,6 @@ class MainViewController: UIViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-
+    
 }
 

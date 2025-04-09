@@ -17,11 +17,5 @@ class HelloViewController: UIViewController {
         super.viewDidLoad()
         helloLaber.text = "Добро пожаловать, \(username)!"
     }
-    
-
-    @IBAction func logoutButtonPressed() {
-        dismiss(animated: true)
-    }
-    
 
 }
