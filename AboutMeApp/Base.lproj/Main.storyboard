@@ -16,25 +16,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="Dwz-0s-WSq">
-                                <rect key="frame" x="16" y="101.5" width="288" height="321"/>
+                                <rect key="frame" x="20" y="155" width="280" height="214.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uTl-ab-iiT">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="229"/>
+                                    <stackView opaque="NO" contentMode="center" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uTl-ab-iiT">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="122.5"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XlO-LJ-Mfl">
-                                                <rect key="frame" x="0.0" y="0.0" width="288" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tmy-Wu-Nks">
-                                                <rect key="frame" x="0.0" y="97.5" width="288" height="34"/>
+                                                <rect key="frame" x="0.0" y="44" width="280" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WD-wg-XyU">
-                                                <rect key="frame" x="0.0" y="194.5" width="288" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="88" width="280" height="34.5"/>
                                                 <color key="backgroundColor" red="0.46016994219900675" green="0.35238967810854566" blue="0.89802831411361694" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -46,10 +46,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ewI-SD-g8G">
-                                        <rect key="frame" x="0.0" y="271" width="288" height="50"/>
+                                        <rect key="frame" x="0.0" y="164.5" width="280" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ft1-Bi-DWl">
-                                                <rect key="frame" x="0.0" y="0.0" width="119" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgote username"/>
@@ -58,7 +58,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lF-qE-sXc">
-                                                <rect key="frame" x="169" y="0.0" width="119" height="50"/>
+                                                <rect key="frame" x="165" y="0.0" width="115" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgote password"/>
@@ -72,18 +72,14 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="frp-bB-D21"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.8696742674120429" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Dwz-0s-WSq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-32" id="Nkl-7b-qR4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dwz-0s-WSq" secondAttribute="bottom" constant="145.5" id="dFX-VG-xLo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dwz-0s-WSq" secondAttribute="trailing" constant="16" id="daV-lY-g0r"/>
-                            <constraint firstItem="Dwz-0s-WSq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zYs-MW-F2j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dwz-0s-WSq" secondAttribute="trailing" constant="20" id="1EO-o7-kIl"/>
+                            <constraint firstItem="Dwz-0s-WSq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4HV-ey-Ogs"/>
+                            <constraint firstItem="Dwz-0s-WSq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="QJX-78-nAA"/>
                         </constraints>
                     </view>
                     <connections>
