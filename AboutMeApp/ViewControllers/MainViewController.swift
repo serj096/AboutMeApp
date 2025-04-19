@@ -7,17 +7,18 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
     
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
     
-    private let correctUsername = "user"
-    private let correctPassword = "1111"
+    private let user = User.getUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginTextField.text = user.username
+        passwordTextField.text = user.password
         loginTextField.layer.cornerRadius = 10
         passwordTextField.layer.cornerRadius = 10
         logInButton.layer.cornerRadius = 10
@@ -33,7 +34,7 @@ class MainViewController: UIViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if loginTextField.text != correctUsername || passwordTextField.text != correctPassword {
+        if loginTextField.text != user.username || passwordTextField.text != user.password {
             showAlert(withTitle: "Ошибка", andMessage: "Неверные имя пользователя или пароль")
             return false
         }
@@ -41,11 +42,11 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func tintLoginButtonPressed() {
-        showAlert(withTitle: "Login", andMessage: "Login: user")
+        showAlert(withTitle: "Login", andMessage: "Login: \(user.username)")
     }
     
     @IBAction func tintPasswordButtonPressed() {
-        showAlert(withTitle: "Password", andMessage: "Password: 1111")
+        showAlert(withTitle: "Password", andMessage: "Password: \(user.password)")
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -54,9 +55,8 @@ class MainViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let helloVC = segue.destination as? HelloViewController
-        helloVC?.username = loginTextField.text ?? ""
-        
+        let tabBarController = segue.destination as? TabBarViewController
+        tabBarController?.user = user
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {

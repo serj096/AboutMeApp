@@ -7,15 +7,19 @@
 
 import UIKit
 
-class HelloViewController: UIViewController {
+final class HelloViewController: UIViewController {
+    
     
     @IBOutlet weak var helloLaber: UILabel!
     
-    var username: String = ""
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        helloLaber.text = "Добро пожаловать, \(username)!"
+        helloLaber.text = """
+            Welcome, \(user.username)!
+            My name is \(user.person.fullName).
+            """
     }
-
+    
 }
