@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="Dwz-0s-WSq">
-                                <rect key="frame" x="20" y="190" width="280" height="220"/>
+                                <rect key="frame" x="20" y="174" width="280" height="220"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="center" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uTl-ab-iiT">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="128"/>
@@ -83,7 +83,10 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dwz-0s-WSq" secondAttribute="trailing" constant="20" id="1EO-o7-kIl"/>
                             <constraint firstItem="Dwz-0s-WSq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4HV-ey-Ogs"/>
-                            <constraint firstItem="Dwz-0s-WSq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="Sd1-Ti-5Pu"/>
+                            <constraint firstItem="Dwz-0s-WSq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Jo-0t-Q8Q"/>
+                            <constraint firstItem="Dwz-0s-WSq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TcZ-0C-vQv"/>
+                            <constraint firstItem="Dwz-0s-WSq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p1h-7C-ipF"/>
+                            <constraint firstItem="Dwz-0s-WSq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wBX-5V-rhy"/>
                         </constraints>
                     </view>
                     <connections>
@@ -94,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9.9236641221374047" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="9.375" y="3.1690140845070425"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="sfc-Ty-ENd">
